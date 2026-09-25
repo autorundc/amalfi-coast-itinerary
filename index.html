@@ -6,76 +6,116 @@
 <title>Enamorados en la Costa Amalfitana · 27 sept – 1 oct 2026</title>
 <style>
   :root{
-    --sand:#faf5ec; --paper:#ffffff; --ink:#23272e; --muted:#5c6470;
-    --sea:#0f6e8c; --sea-dark:#0b546c; --lemon:#f2b90d; --lemon-soft:#fdf3d4;
-    --terra:#e07a5f; --terra-soft:#fbe6df; --ok:#2e9e5b; --ok-soft:#e4f4ea;
-    --warn:#c98a00; --warn-soft:#fdf1dc; --line:#e8e0d2;
+    --sand:#faf6ee; --paper:#ffffff; --ink:#242830; --muted:#5f6672;
+    --sea:#0f6e8c; --sea-dark:#0b546c; --sea-soft:#e9f4f8;
+    --lemon:#eab308; --lemon-soft:#fdf3d1; --terra:#e07a5f; --terra-soft:#fbe9e3;
+    --ok:#2e9e5b; --ok-soft:#e5f5ec; --warn:#b97900; --warn-soft:#fdf2dd;
+    --line:#e9e1d3;
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--sand);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
-  .wrap{max-width:860px;margin:0 auto;padding:0 18px 60px}
-  header.hero{background:linear-gradient(160deg,#0f6e8c 0%,#0b546c 55%,#083f52 100%);color:#fff;padding:34px 18px 30px;border-bottom:6px solid var(--lemon)}
-  .hero-inner{max-width:860px;margin:0 auto}
-  .hero .kicker{letter-spacing:.18em;font-size:.72rem;text-transform:uppercase;color:#bfe6f2;font-weight:600}
-  h1{font-family:Georgia,"Times New Roman",serif;font-size:2.15rem;line-height:1.12;margin:10px 0 6px;font-weight:600}
-  .hero .dates{font-size:1.02rem;color:#e7f3f8;margin:0}
-  .hero .meta{font-size:.78rem;color:#9fd0e0;margin-top:14px}
-  .pills{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0}
-  .pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#fff;padding:4px 10px;border-radius:999px;font-size:.74rem}
-  nav.jump{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);box-shadow:0 2px 10px rgba(0,0,0,.05)}
-  nav.jump .inner{max-width:860px;margin:0 auto;display:flex;gap:6px;overflow-x:auto;padding:8px 18px}
-  nav.jump a{white-space:nowrap;text-decoration:none;color:var(--sea-dark);font-size:.8rem;font-weight:600;padding:6px 11px;border-radius:8px;background:var(--sand)}
-  nav.jump a:hover{background:var(--lemon-soft)}
-  .daycard{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px 20px;margin-top:22px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
-  .day-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;border-bottom:2px solid var(--sand);padding-bottom:10px;margin-bottom:14px}
-  .day-tag{font-family:Georgia,serif;font-size:1.35rem;font-weight:700;color:var(--sea-dark)}
-  .day-title{font-size:1.12rem;font-weight:700}
-  .day-desc{color:var(--muted);font-size:.9rem}
-  h2.sec{font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin:20px 0 10px;display:flex;align-items:center;gap:8px}
-  h2.sec::after{content:"";flex:1;height:1px;background:var(--line)}
-  .badge{display:inline-block;font-size:.66rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:6px;vertical-align:middle}
-  .badge.ok{background:var(--ok-soft);color:var(--ok)}
-  .badge.pend{background:var(--warn-soft);color:var(--warn)}
-  .badge.info{background:var(--terra-soft);color:var(--terra)}
-  .row{display:flex;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line);align-items:flex-start}
-  .row:last-child{border-bottom:none}
-  .row .ico{flex:0 0 26px;font-size:1.1rem;text-align:center;margin-top:1px}
-  .row .body{flex:1;min-width:0}
-  .row .body .t{font-weight:600}
-  .row .body .s{color:var(--muted);font-size:.88rem}
-  table{width:100%;border-collapse:collapse;font-size:.84rem;margin:6px 0 4px}
-  th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}
-  th{background:var(--sand);color:var(--muted);font-size:.72rem;text-transform:uppercase;letter-spacing:.05em}
-  td.px{white-space:nowrap;font-weight:700;color:var(--sea-dark)}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--sand);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
   a{color:var(--sea);text-decoration-thickness:1px;text-underline-offset:2px}
   a:hover{color:var(--sea-dark)}
-  .card{background:var(--sand);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:8px 0}
-  .card b.t{font-size:.92rem}
-  ul.tight{margin:6px 0 6px 18px;padding:0}
-  ul.tight li{margin:4px 0}
-  .avoid{background:#fdf0ee;border:1px solid #f2cfc7;border-radius:10px;padding:12px 14px;margin:8px 0}
-  .avoid li{margin:5px 0}
-  .note{background:var(--warn-soft);border-left:4px solid var(--warn);border-radius:8px;padding:11px 14px;margin:12px 0;font-size:.88rem}
-  .note.blue{background:#eaf4f8;border-left-color:var(--sea)}
-  .note.green{background:var(--ok-soft);border-left-color:var(--ok)}
-  .checklist{margin:12px 0}
-  .check{display:flex;gap:11px;align-items:flex-start;padding:11px 12px;border:1px solid var(--line);border-radius:10px;margin:8px 0;background:var(--paper)}
-  .check input{margin-top:4px;width:16px;height:16px;accent-color:var(--sea)}
-  .check .urge{font-size:.64rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:2px 7px;border-radius:6px;white-space:nowrap}
+  .wrap{max-width:940px;margin:0 auto;padding:0 20px 70px}
+
+  header.hero{background:linear-gradient(160deg,#0f6e8c 0%,#0b546c 55%,#083f52 100%);color:#fff;padding:36px 20px 30px;border-bottom:6px solid var(--lemon)}
+  .hero-inner{max-width:940px;margin:0 auto}
+  .hero .kicker{letter-spacing:.2em;font-size:.72rem;text-transform:uppercase;color:#bfe6f2;font-weight:700}
+  h1{font-family:Georgia,"Times New Roman",serif;font-size:2.2rem;line-height:1.1;margin:10px 0 6px;font-weight:600}
+  .hero .dates{font-size:1.02rem;color:#e8f4f8;margin:0}
+  .legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .legend span{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#fff;padding:4px 10px;border-radius:999px;font-size:.74rem}
+  .legend b{color:#ffd766}
+
+  nav.jump{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);box-shadow:0 2px 10px rgba(0,0,0,.05)}
+  nav.jump .inner{max-width:940px;margin:0 auto;display:flex;gap:6px;overflow-x:auto;padding:8px 20px;align-items:center}
+  nav.jump a{white-space:nowrap;text-decoration:none;color:var(--sea-dark);font-size:.8rem;font-weight:600;padding:6px 11px;border-radius:8px;background:var(--sand)}
+  nav.jump a:hover{background:var(--lemon-soft)}
+  nav.jump .prog{margin-left:auto;font-size:.78rem;color:var(--muted);white-space:nowrap}
+
+  .daycard{background:var(--paper);border:1px solid var(--line);border-radius:16px;margin-top:26px;box-shadow:0 1px 4px rgba(0,0,0,.05);overflow:hidden}
+  .daycard>header{padding:18px 22px 14px;border-bottom:1px solid var(--line)}
+  .daycard>header .day-tag{font-family:Georgia,serif;font-size:1.5rem;font-weight:700;color:var(--sea-dark)}
+  .daycard>header .day-title{font-size:1.12rem;font-weight:700;margin-top:2px}
+  .daycard>header .day-desc{color:var(--muted);font-size:.9rem;margin:2px 0 0}
+  .daycard .content{padding:6px 22px 20px}
+
+  .strip{display:flex;gap:12px;align-items:center;background:var(--sea-soft);border:1px solid #cfe6ef;border-radius:12px;padding:12px 14px;margin:16px 0;flex-wrap:wrap}
+  .strip .ico{font-size:1.3rem}
+  .strip .txt{flex:1;min-width:220px;font-size:.92rem}
+  .strip .txt b{color:var(--sea-dark)}
+  .btn{display:inline-block;background:var(--sea);color:#fff;text-decoration:none;font-size:.8rem;font-weight:600;padding:7px 12px;border-radius:8px;white-space:nowrap}
+  .btn:hover{background:var(--sea-dark);color:#fff}
+  .btn.ghost{background:#fff;color:var(--sea);border:1px solid var(--sea)}
+  .btn.ghost:hover{background:var(--sea-soft)}
+
+  h2.sec{font-size:.74rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:24px 0 10px;display:flex;align-items:center;gap:10px}
+  h2.sec::after{content:"";flex:1;height:1px;background:var(--line)}
+  .badge{display:inline-block;font-size:.64rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border-radius:6px;vertical-align:middle}
+  .badge.ok{background:var(--ok-soft);color:var(--ok)}
+  .badge.info{background:var(--terra-soft);color:var(--terra)}
+
+  .item{display:flex;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line);align-items:flex-start}
+  .item:last-child{border-bottom:none}
+  .item .ico{flex:0 0 26px;font-size:1.1rem;text-align:center;margin-top:1px}
+  .item .body{flex:1;min-width:0}
+  .item .body .t{font-weight:600}
+  .item .body .s{color:var(--muted);font-size:.88rem}
+
+  table{width:100%;border-collapse:collapse;font-size:.86rem;margin:6px 0 4px}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--sand);color:var(--muted);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em}
+  td.px{white-space:nowrap;font-weight:700;color:var(--sea-dark)}
+  .live{display:inline-block;font-size:.74rem;font-weight:600;color:#fff;text-decoration:none;border-radius:8px;padding:5px 10px;background:var(--sea);margin-top:6px;white-space:nowrap}
+  .live:hover{background:var(--sea-dark);color:#fff}
+  .live::before{content:"🔄 "}
+  .livepanel iframe{width:100%;height:430px;border:1px solid var(--line);border-radius:10px;background:#fff;margin-top:6px}
+  .livepanel .hint{font-size:.78rem;color:var(--muted);margin:6px 0 0}
+  td .s{color:var(--muted);font-size:.8rem;display:block;margin-top:2px}
+
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0}
+  @media(max-width:640px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--sand);border:1px solid var(--line);border-radius:12px;padding:13px 15px}
+  .card .t{font-weight:700;font-size:.94rem}
+  .card .s{color:var(--muted);font-size:.85rem;margin-top:3px}
+  .card .pin{display:inline-block;font-size:.76rem;margin-top:7px}
+
+  details.extra{margin:10px 0;border:1px solid var(--line);border-radius:12px;background:var(--sand);overflow:hidden}
+  details.extra summary{cursor:pointer;padding:11px 15px;font-weight:600;font-size:.88rem;list-style:none;display:flex;align-items:center;gap:8px}
+  details.extra summary::-webkit-details-marker{display:none}
+  details.extra summary::before{content:"▸";color:var(--sea);transition:transform .15s}
+  details.extra[open] summary::before{transform:rotate(90deg)}
+  details.extra .body{padding:2px 16px 14px;font-size:.88rem}
+
+  .avoid{color:#7c2d12}
+  .avoid li{margin:6px 0}
+  .rem li{margin:5px 0}
+
+  .checklist{margin:8px 0}
+  .check{display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border:1px solid var(--line);border-radius:11px;margin:7px 0;background:#fff;cursor:pointer}
+  .check:hover{border-color:#cfc4b2}
+  .check input{width:17px;height:17px;margin-top:2px;accent-color:var(--sea);flex:0 0 auto}
+  .check .lbl{flex:1;font-size:.9rem}
+  .check .lbl b{font-weight:600}
+  .check .s{color:var(--muted);font-size:.8rem}
+  .urge{font-size:.62rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:2px 7px;border-radius:6px;white-space:nowrap;margin-left:6px;vertical-align:middle}
   .urge.now{background:var(--terra-soft);color:var(--terra)}
   .urge.soon{background:var(--warn-soft);color:var(--warn)}
-  .urge.day{background:#e8edf2;color:#4a5560}
-  .urge.walk{background:#e8edf2;color:#4a5560}
-  .price-tag{font-weight:700;color:var(--sea-dark)}
-  footer{max-width:860px;margin:30px auto 0;padding:20px 18px;border-top:1px solid var(--line);color:var(--muted);font-size:.78rem}
-  .srcs{font-size:.76rem;color:var(--muted)}
+  .urge.day{background:#e8edf2;color:#49525e}
+  .urge.walk{background:#e8edf2;color:#49525e}
+  .reset{display:inline-block;margin:4px 0 12px;font-size:.78rem;color:var(--muted);background:none;border:1px solid var(--line);border-radius:8px;padding:5px 11px;cursor:pointer}
+  .reset:hover{background:var(--warn-soft);color:var(--warn)}
+
+  .note{background:var(--warn-soft);border-left:4px solid var(--warn);border-radius:8px;padding:12px 15px;margin:14px 0;font-size:.88rem}
+  .note.blue{background:var(--sea-soft);border-left-color:var(--sea)}
+  .note.green{background:var(--ok-soft);border-left-color:var(--ok)}
+  .note.terra{background:var(--terra-soft);border-left-color:var(--terra)}
+
+  footer{max-width:940px;margin:34px auto 0;padding:22px 20px;border-top:1px solid var(--line);color:var(--muted);font-size:.78rem}
+  .srcs{font-size:.74rem}
   .srcs a{color:var(--muted)}
-  @media(max-width:560px){
-    h1{font-size:1.7rem}
-    th,td{padding:6px 5px;font-size:.78rem}
-    .daycard{padding:18px 14px}
-  }
+  @media(max-width:560px){ h1{font-size:1.7rem} th,td{padding:8px 6px;font-size:.8rem} .daycard .content{padding:4px 14px 16px} .daycard>header{padding:15px 14px 12px} }
 </style>
 </head>
 <body>
@@ -84,326 +124,410 @@
     <div class="kicker">Guía de viaje · día a día</div>
     <h1>Enamorados en la Costa Amalfitana</h1>
     <p class="dates">Nápoles · Positano · Amalfi · Capri · Pompeya — 27 septiembre a 1 octubre 2026</p>
-    <div class="pills">
-      <span class="pill">2 personas</span>
-      <span class="pill">Base: Nápoles (DCR Municipio)</span>
-      <span class="pill">Precios verificados 25 sep 2026</span>
+    <div class="legend">
+      <span>✅ = ya confirmado (no tocar)</span>
+      <span>⏱ = horario <b>orientativo</b>, pulsa "en vivo" ese día</span>
+      <span>☑ = checklist que se <b>guarda en tu navegador</b></span>
     </div>
-    <div class="meta">Trenes y hotel ya confirmados (marcados ✅). Ferris, barcas y entradas pendientes → resueltos abajo con operador, horario, precio y link oficial. Los horarios de ferry varían con el mar: revalida el día previo.</div>
   </div>
 </header>
 
 <nav class="jump"><div class="inner">
-  <a href="#d27">DOM 27 · Nápoles</a>
-  <a href="#d28">LUN 28 · Positano/Amalfi</a>
-  <a href="#d29">MAR 29 · Capri</a>
-  <a href="#d30">MIÉ 30 · Pompeya</a>
-  <a href="#d01">JUE 1 · Nápoles</a>
-  <a href="#resumen">Resumen compras</a>
+  <a href="#d27">DOM 27</a>
+  <a href="#d28">LUN 28</a>
+  <a href="#d29">MAR 29</a>
+  <a href="#d30">MIÉ 30</a>
+  <a href="#d01">JUE 1</a>
+  <a href="#resumen">Compras</a>
+  <span class="prog">☑ <span id="progress">0/0</span></span>
 </div></nav>
 
 <div class="wrap">
 
 <!-- ============ DOMINGO 27 ============ -->
 <section class="daycard" id="d27">
-  <div class="day-head">
-    <span class="day-tag">DOM 27</span>
-    <span class="day-title">Llegada a Nápoles + tarde de playa</span>
-    <span class="day-desc">Aterrizar suave y primer baño.</span>
+  <header><span class="day-tag">DOM 27</span><div class="day-title">Llegada a Nápoles + tarde de playa</div><div class="day-desc">Aterrizar suave, dejar maletas y primer baño.</div></header>
+  <div class="content">
+
+    <h2 class="sec">Salida desde tu hotel</h2>
+    <div class="strip"><span class="ico">🏨</span><span class="txt"><b>Hotel DCR Municipio</b> (Via G. Melisurgo 4) — llegas desde Napoli Centrale en metro Línea 1 hasta <b>Municipio</b> (3 paradas) o taxi ~10 min.</span>
+    <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Napoli+Centrale+Piazza+Garibaldi&destination=Via+Guglielmo+Melisurgo+4,+80133+Napoli&travelmode=transit" target="_blank">Cómo llegar al hotel</a></div>
+
+    <h2 class="sec">1 · Ya confirmado</h2>
+    <div class="item"><div class="ico">🚄</div><div class="body"><div class="t">Tren Firenze–Napoli · 8:43 → 11:48 <span class="badge ok">OK</span></div><div class="s">Frecciarossa / Trenitalia. Llega a Napoli Centrale.</div></div></div>
+    <div class="item"><div class="ico">🏨</div><div class="body"><div class="t">Hotel DCR Municipio <span class="badge ok">OK</span></div><div class="s">Via Guglielmo Melisurgo 4, Scala B, 6° piano. Deja las maletas en recepción (check-in suele ser 14–15h).</div></div></div>
+
+    <h2 class="sec">2 · Playa cerca de Nápoles</h2>
+    <p style="margin:4px 0 2px;font-size:.9rem">Las playas de Nápoles son <b>playas de pago</b> (entras, pagas y te dan sombrilla + tumbona sobre una plataforma de madera/roca, no arena). La más cómoda desde el centro:</p>
+    <div class="card"><div class="t">🏖️ Bagno Elena (Posillipo)</div><div class="s">Metro Línea 2 (dirección Pozzuoli) desde Montesanto/Cavour hasta <b>Mergellina</b> → 10 min a pie. Sombrilla + tumbona ≈ <b>€20–30/pax</b>. Alternativa: <b>Bagno Sirena</b>, al lado.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Bagno+Elena+Posillipo+Napoli" target="_blank">Google Maps</a></span></div>
+    <div class="note blue">Si lo que quieres es arena de verdad, espérate a mañana (Positano/Spiaggia Grande). Hoy lo práctico es el paseo por el mar.</div>
+
+    <h2 class="sec">3 · Comer (elige 1–2)</h2>
+    <div class="grid">
+      <div class="card"><div class="t">🍕 L'Antica Pizzeria da Michele</div><div class="s">La mítica del "Eat Pray Love". Solo Margherita/Marinara, €5–7. Pide para llevar y te saltas la cola.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Antica+Pizzeria+Da+Michele+Via+Cesare+Sersale+Napoli" target="_blank">Maps</a></span></div>
+      <div class="card"><div class="t">🍕 Gino e Totò Sorbillo</div><div class="s">Via dei Tribunali. Más variedad que Da Michele, €6–9.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Sorbillo+Via+dei+Tribunali+Napoli" target="_blank">Maps</a></span></div>
+      <div class="card"><div class="t">☕ Gran Caffè Gambrinus</div><div class="s">Salón histórico en Piazza Trieste e Trento. Café + sfogliatella €5–8.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Gran+Caffe+Gambrinus+Napoli" target="_blank">Maps</a></span></div>
+      <div class="card"><div class="t">🐟 Mercado/puerto de Mergellina</div><div class="s">Fritto di paranza y pescado, ~€10–15, ambiente local.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Mergellina+Napoli" target="_blank">Maps</a></span></div>
+    </div>
+
+    <h2 class="sec">4 · Ver / hacer</h2>
+    <div class="grid">
+      <div class="card"><div class="t">🏰 Castel dell'Ovo + Lungomare</div><div class="s">Paseo al atardecer gratis, la foto clásica de Nápoles.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Castel+dell'Ovo+Napoli" target="_blank">Maps</a></span></div>
+      <div class="card"><div class="t">🛍️ Galleria Umberto I</div><div class="s">Frente al Gambrinus, gratis, ideal al caer la tarde.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Galleria+Umberto+I+Napoli" target="_blank">Maps</a></span></div>
+    </div>
+
+    <h2 class="sec">5 · Checklist del día</h2>
+    <div class="checklist">
+      <label class="check"><input type="checkbox" class="js-check" data-key="d27-maletas"><span class="lbl"><b>Dejar maletas en recepción</b><br><span class="s">Pide que te las guarden hasta el check-in.</span></span></label>
+      <label class="check"><input type="checkbox" class="js-check" data-key="d27-playa"><span class="lbl"><b>Playa / paseo (Bagno Elena o Lungomare)</b><br><span class="s">Lleva efectivo si vas a la playa de pago.</span></span></label>
+      <label class="check"><input type="checkbox" class="js-check" data-key="d27-cena"><span class="lbl"><b>Cena: pizza napolitana</b><br><span class="s">Da Michele o Sorbillo.</span></span></label>
+    </div>
+
+    <details class="extra"><summary>⚠️ Errores comunes</summary><div class="body avoid"><ul>
+      <li>Taxi en la estación sin tarifa pactada — pide precio fijo o usa metro (más barato).</li>
+      <li>Comer en los locales pegados a la estación o al puerto: calidad baja, precio alto.</li>
+      <li>Móvil en la mano en zonas concurridas (Centrale, Spaccanapoli): carteristas.</li>
+    </ul></div></details>
+    <details class="extra"><summary>💡 Recordatorios</summary><div class="body rem"><ul>
+      <li>💶 Lleva <b>efectivo</b>: lidos y muchos puestos no aceptan tarjeta.</li>
+      <li>🕐 Las playas de pago cierran ~18:30–19:00 en esta época; llega antes de las 15h.</li>
+      <li>📱 Descarga mapas offline de Nápoles y guarda la dirección del hotel en italiano.</li>
+    </ul></div></details>
   </div>
-
-  <h2 class="sec">1 · Logística confirmada</h2>
-  <div class="row"><div class="ico">🚄</div><div class="body"><div class="t">Tren Firenze–Napoli · 8:43 → 11:48</div><div class="s">Frecciarossa / Trenitalia. Llega a Napoli Centrale. <span class="badge ok">OK — no tocar</span></div></div></div>
-  <div class="row"><div class="ico">🏨</div><div class="body"><div class="t">Hotel DCR Municipio — Via Guglielmo Melisurgo 4, Scala B, 6° piano</div><div class="s">A 5 min a pie de Piazza Municipio y a ~12 min del Molo Beverello. <span class="badge ok">OK — no tocar</span></div></div></div>
-  <div class="row"><div class="ico">🧳</div><div class="body"><div class="t">Dejar maletas en recepción</div><div class="s">Check-in suele ser 14–15h. Deja el equipaje y sal a aprovechar la tarde.</div></div></div>
-
-  <h2 class="sec">2 · Playa cerca de Nápoles (recomendado)</h2>
-  <div class="card"><b class="t">🏖️ Bagno Elena (Posillipo)</b> — el lido más cómodo y accesible desde el centro.<br>
-  <span class="s">Cómo llegar: Metro Línea 2 (dirección Pozzuoli) desde Montesanto/Cavour hasta <b>Mergellina</b>, luego ~10 min a pie por la costa de Posillipo. Entrada con sombrilla+tumbona ≈ <span class="price-tag">€20–30/pax</span>. Alternativa: <b>Bagno Sirena</b> (al lado, misma mecánica).</span><br>
-  📍 <a href="https://www.google.com/maps/search/?api=1&query=Bagno+Elena+Posillipo+Napoli" target="_blank">Google Maps — Bagno Elena</a></div>
-  <div class="note">Las playas de Nápoles son lidos con plataforma (roca/escollera), no arena tipo Caribe. Si quieres arena de verdad, la Costa Amalfitana (Positano/Marina di Vietri) ya te la da al día siguiente.</div>
-
-  <h2 class="sec">3 · Dónde comer / imprescindibles</h2>
-  <ul class="tight">
-    <li>🍕 <b>L'Antica Pizzeria da Michele</b> (la del "Eat Pray Love") — solo Margherita/Marinara, €5–7. Cola rápida si pides para llevar. 📍 <a href="https://www.google.com/maps/search/?api=1&query=Antica+Pizzeria+Da+Michele+Via+Cesare+Sersale+Napoli" target="_blank">Maps</a></li>
-    <li>🍕 <b>Gino e Totò Sorbillo</b> (Via dei Tribunali) — la "otra" pizza mítica, más variedad, €6–9. 📍 <a href="https://www.google.com/maps/search/?api=1&query=Sorbillo+Via+dei+Tribunali+Napoli" target="_blank">Maps</a></li>
-    <li>☕ <b>Gran Caffè Gambrinus</b> (Piazza Trieste e Trento) — café y sfogliatella en un salón histórico, café €2–3. 📍 <a href="https://www.google.com/maps/search/?api=1&query=Gran+Caffe+Gambrinus+Napoli" target="_blank">Maps</a></li>
-    <li>🦪 Paseo por el <b>Lungomare</b> (Castel dell'Ovo) al atardecer — gratis. 📍 <a href="https://www.google.com/maps/search/?api=1&query=Castel+dell'Ovo+Napoli" target="_blank">Maps</a></li>
-  </ul>
-
-  <h2 class="sec">4 · Evitar / errores comunes</h2>
-  <div class="avoid"><ul class="tight">
-    <li>❌ Tomar un taxi en la estación sin tarifa pactada — pide precio fijo o usa app (Uber/FreeNow limitadas en Nápoles); el tramo Centrale→hotel es corto.</li>
-    <li>❌ Comer pizza en locales turísticos pegados a la estación o al puerto — calidad baja, precio alto.</li>
-    <li>❌ Caminar con el móvil en la mano en zonas concurridas (Centrale, Spaccanapoli): carteristas.</li>
-  </ul></div>
-
-  <h2 class="sec">5 · Recordatorios</h2>
-  <ul class="tight">
-    <li>💶 Lleva <b>efectivo</b> para lidos y taxis; muchos no aceptan tarjeta.</li>
-    <li>🕐 Los lidos cierran ~18:30–19:00 en esta época; llega antes de las 15h para aprovechar.</li>
-    <li>📱 Descarga mapas offline de Nápoles y guarda la dirección del hotel en italiano.</li>
-  </ul>
 </section>
 
 <!-- ============ LUNES 28 ============ -->
 <section class="daycard" id="d28">
-  <div class="day-head">
-    <span class="day-tag">LUN 28</span>
-    <span class="day-title">Positano (mañana) + Amalfi (tarde)</span>
-    <span class="day-desc">El gran día de costa, por mar.</span>
+  <header><span class="day-tag">LUN 28</span><div class="day-title">Positano (mañana) + Amalfi (tarde)</div><div class="day-desc">El gran día de costa, todo por mar.</div></header>
+  <div class="content">
+
+    <h2 class="sec">Salida desde tu hotel</h2>
+    <div class="strip"><span class="ico">⛴️</span><span class="txt">Camina <b>~10–12 min</b> del hotel al <b>Molo Beverello</b> (de donde salen las lanchas a Positano). Llega 30 min antes.</span>
+    <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Via+Guglielmo+Melisurgo+4,+80133+Napoli&destination=Molo+Beverello,+Napoli&travelmode=walking" target="_blank">Cómo llegar a pie</a></div>
+
+    <h2 class="sec">1 · Ya confirmado</h2>
+    <div class="item"><div class="ico">🏨</div><div class="body"><div class="t">Noche en Nápoles (DCR Municipio) <span class="badge ok">OK</span></div><div class="s">Vuelves a dormir a Nápoles.</div></div></div>
+
+    <h2 class="sec">2 · Cómo moverse hoy (con opciones)</h2>
+    <table>
+      <tr><th>Tramo</th><th>Opción principal</th><th>Alternativa</th><th>Precio</th></tr>
+      <tr>
+        <td class="px">Napoli → Positano<br><span class="s">~50 min</span></td>
+        <td><b>NLG</b> desde Beverello: <b>08:35</b> (directa, encaja con tu "~9am") y 10:00. <a class="live" href="https://www.nlg.it/en/routes/napolibeverello-positano/" target="_blank">ver en vivo →</a></td>
+        <td><b>Alilauro</b> vía Capri (más lenta). O plan B por tierra si hay marejada: Circumvesuviana a Sorrento + bus SITA a Positano (~€9 total, 2 h).</td>
+        <td class="px">€32</td>
+      </tr>
+      <tr>
+        <td class="px">Positano → Amalfi<br><span class="s">25 min</span></td>
+        <td><b>Travelmar</b>: salidas 11:30 / 12:00 / <b>13:30</b> (recomendada para salir a las 13h) / 15:30. <a class="live" href="https://www.travelmar.it/it/prossime-partenze-traghetti" target="_blank">ver en vivo →</a></td>
+        <td><b>NLG</b> 13:10 · o bus <b>SITA</b> Positano→Amalfi (~€3, 40 min, curvas y vistas).</td>
+        <td class="px">€10</td>
+      </tr>
+      <tr>
+        <td class="px">Amalfi → Napoli<br><span class="s">~1h20</span></td>
+        <td><b>NLG</b>: salidas <b>17:00</b> (te deja salir a las 17h) y 15:45. <a class="live" href="https://www.nlg.it/en/routes/napolibeverello-positano/" target="_blank">ver en vivo →</a></td>
+        <td>Plan B: bus SITA Amalfi→Sorrento + Circumvesuviana a Napoli (más largo, ~2,5 h).</td>
+        <td class="px">€32</td>
+      </tr>
+    </table>
+    <div class="note blue"><b>Compra ya</b> el Napoli→Positano (08:35) y el Amalfi→Napoli (17:00) en nlg.it: en fin de temporada la mañana se llena. El Positano→Amalfi cómpralo en el muelle para no atarte a una hora.</div>
+    <div class="note">⚠️ Con marejada se suspenden primero las lanchas. Teléfonos: NLG <b>081 552 0763</b> · Travelmar <b>089 872 950</b>.</div>
+
+    <details class="extra livepanel"><summary>🖥️ Salidas en vivo · Travelmar (Positano–Amalfi y toda la costa)</summary><div class="body">
+      <iframe src="https://www.travelmar.it/it/prossime-partenze-traghetti" loading="lazy" title="Salidas en vivo Travelmar"></iframe>
+      <div class="hint">Página oficial de Travelmar incrustada (próximas salidas). Si no carga en tu móvil, usa el botón "🔄 Ver horario en vivo" de la tabla de arriba.</div>
+    </div></details>
+
+    <h2 class="sec">3 · Comer (elige 1–2)</h2>
+    <div class="grid">
+      <div class="card"><div class="t">🦐 Chez Black (Positano, Spiaggia Grande)</div><div class="s">Marisco en primera línea de playa, plato €25–40.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Chez+Black+Positano" target="_blank">Maps</a></span></div>
+      <div class="card"><div class="t">🍝 La Tagliata (Montepertuso)</div><div class="s">Sobre Positano, cocina casera con vistas. Menú degustación ~€45.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=La+Tagliata+Montepertuso+Positano" target="_blank">Maps</a></span></div>
+      <div class="card"><div class="t">🍋 Pasticceria Pansa (Amalfi)</div><div class="s">La delizia al limone más famosa, €4–5. Perfecto para un alto dulce.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Pasticceria+Pansa+Amalfi" target="_blank">Maps</a></span></div>
+      <div class="card"><div class="t">🐟 Da Gemma (Amalfi)</div><div class="s">Clásico con terraza sobre el puerto, €30–45.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Da+Gemma+Amalfi" target="_blank">Maps</a></span></div>
+    </div>
+
+    <h2 class="sec">4 · Ver / hacer</h2>
+    <div class="grid">
+      <div class="card"><div class="t">⛪ Chiesa di Santa Maria Assunta (Positano)</div><div class="s">La cúpula de mayólica, gratis. Justo bajando a Spiaggia Grande.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Chiesa+di+Santa+Maria+Assunta+Positano" target="_blank">Maps</a></span></div>
+      <div class="card"><div class="t">🏛️ Duomo di Sant'Andrea (Amalfi)</div><div class="s">Catedral y claustro (claustro ~€3).</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Duomo+di+Amalfi" target="_blank">Maps</a></span></div>
+    </div>
+
+    <h2 class="sec">5 · Checklist del día</h2>
+    <div class="checklist">
+      <label class="check"><input type="checkbox" class="js-check" data-key="d28-ferry1"><span class="lbl"><b>Comprado: ferry Napoli→Positano 08:35 (NLG)</b><br><span class="s">nlg.it · €32/pax.</span></span></label>
+      <label class="check"><input type="checkbox" class="js-check" data-key="d28-ferry2"><span class="lbl"><b>Comprado: ferry Amalfi→Napoli 17:00 (NLG)</b><br><span class="s">nlg.it · €32/pax.</span></span></label>
+      <label class="check"><input type="checkbox" class="js-check" data-key="d28-muelle"><span class="lbl"><b>Día: ferry Positano→Amalfi (Travelmar) en el muelle</b><br><span class="s">€10/pax, salida ~13:30.</span></span></label>
+      <label class="check"><input type="checkbox" class="js-check" data-key="d28-bag"><span class="lbl"><b>Mochila de playa</b><br><span class="s">Bañador, toalla, gorra, agua.</span></span></label>
+    </div>
+
+    <details class="extra"><summary>⚠️ Errores comunes</summary><div class="body avoid"><ul>
+      <li>Quedarte solo en el paseo marítimo de Positano: sube 2–3 calles y los precios bajan.</li>
+      <li>Confiar en el último ferry sin plan B: en septiembre el mar se mueve y cancelan corse de tarde.</li>
+      <li>Llegar al ferry justo: el embarque cierra ~10 min antes de la salida.</li>
+    </ul></div></details>
+    <details class="extra"><summary>💡 Recordatorios</summary><div class="body rem"><ul>
+      <li>⛴️ Sale del <b>Molo Beverello</b> (no de Calata Porta di Massa). Llega 30 min antes.</li>
+      <li>💶 Efectivo para el ferry Positano→Amalfi y los helados.</li>
+      <li>🎒 No hay dónde comprar barato en el puerto: lleva agua y algo de comer.</li>
+    </ul></div></details>
   </div>
-
-  <h2 class="sec">1 · Logística confirmada</h2>
-  <div class="row"><div class="ico">🏨</div><div class="body"><div class="t">Noche en Nápoles (DCR Municipio)</div><div class="s">Vuelves a dormir a Nápoles. <span class="badge ok">OK</span></div></div></div>
-
-  <h2 class="sec">2 · Transporte pendiente (resuelto)</h2>
-  <table>
-    <tr><th>Tramo</th><th>Operador / salida</th><th>Precio</th><th>Link</th></tr>
-    <tr>
-      <td class="px">Napoli → Positano<br><span style="font-weight:400;color:var(--muted)">~50 min · Molo Beverello</span></td>
-      <td><b>NLG</b> — salidas <b>08:35</b> (recomendada, directa y encaja con tu "~9am"), 10:00. <span style="color:var(--terra)">Evita la de 10:40 (cambia de barco en Capri).</span></td>
-      <td class="px">€32</td>
-      <td><a href="https://www.nlg.it/en/routes/napolibeverello-positano/" target="_blank">nlg.it</a></td>
-    </tr>
-    <tr>
-      <td class="px">Positano → Amalfi<br><span style="font-weight:400;color:var(--muted)">25 min · salida 13:00–13:30</span></td>
-      <td><b>Travelmar</b> 13:30 (recomendada) · también <b>NLG</b> 13:10. Salidas cada ~30–60 min.</td>
-      <td class="px">€10</td>
-      <td><a href="https://www.travelmar.it/it/orari" target="_blank">travelmar.it</a></td>
-    </tr>
-    <tr>
-      <td class="px">Amalfi → Napoli<br><span style="font-weight:400;color:var(--muted)">~1h20 · directo</span></td>
-      <td><b>NLG</b> — salidas <b>17:00</b> (recomendada, te deja salir de Amalfi a las 17h) y 15:45. Llega al Beverello.</td>
-      <td class="px">€32</td>
-      <td><a href="https://www.nlg.it/en/routes/napolibeverello-positano/" target="_blank">nlg.it</a></td>
-    </tr>
-  </table>
-  <div class="note blue">Compra el <b>Napoli→Positano (08:35)</b> y el <b>Amalfi→Napoli (17:00)</b> online hoy mismo: en fin de temporada los asientos de la mañana se agotan. El tramo Positano→Amalfi cómpralo en el muelle (Travelmar, ventanilla) para no atarte a un horario.</div>
-  <div class="note">⚠️ Si hay marejada, las lanchas se suspenden primero. Teléfonos: NLG <b>081 552 0763</b> · Travelmar <b>089 872 950</b>. Alternativa por tierra: bus SITA Sorrento/Amalfi o tren Circumvesuviana hasta Sorrento + bus.</div>
-
-  <h2 class="sec">3 · Dónde comer / imprescindibles</h2>
-  <ul class="tight">
-    <li>🍋 <b>Positano</b>: sube a la <b>Chiesa di Santa Maria Assunta</b> (la cúpula de mayólica, gratis) y pasea hasta Spiaggia Grande. 📍 <a href="https://www.google.com/maps/search/?api=1&query=Chiesa+di+Santa+Maria+Assunta+Positano" target="_blank">Maps</a></li>
-    <li>🦐 <b>Chez Black</b> (Spiaggia Grande, Positano) — marisco en primera línea, plato €25–40. 📍 <a href="https://www.google.com/maps/search/?api=1&query=Chez+Black+Positano" target="_blank">Maps</a></li>
-    <li>🍝 <b>La Tagliata</b> (Montepertuso, sobre Positano) — comida casera con vistas; menú degustación ~€45. 📍 <a href="https://www.google.com/maps/search/?api=1&query=La+Tagliata+Montepertuso+Positano" target="_blank">Maps</a></li>
-    <li>⛪ <b>Amalfi</b>: Duomo di Sant'Andrea (claustro €3) y Pasticceria <b>Pansa</b> — delizia al limone €4–5. 📍 <a href="https://www.google.com/maps/search/?api=1&query=Pasticceria+Pansa+Amalfi" target="_blank">Maps</a></li>
-  </ul>
-
-  <h2 class="sec">4 · Evitar / errores comunes</h2>
-  <div class="avoid"><ul class="tight">
-    <li>❌ Quedarte en el paseo marítimo de Positano pagando precios turísticos; sube unas escaleras y bajan los precios.</li>
-    <li>❌ Confiar en el último ferry sin plan B — en septiembre el mar se mueve y anulan corse de tarde.</li>
-    <li>❌ Llegar al ferry en el último minuto: el embarque cierra ~10 min antes de la salida.</li>
-  </ul></div>
-
-  <h2 class="sec">5 · Recordatorios</h2>
-  <ul class="tight">
-    <li>🎒 Lleva bañador, toalla, gorra y agua; no hay dónde comprar barato en el puerto.</li>
-    <li>📸 El ferry sale del <b>Molo Beverello</b> (no de Calata Porta di Massa). Llega 30 min antes.</li>
-    <li>💶 Efectivo para el ferry Positano→Amalfi (ventanilla) y helados.</li>
-  </ul>
 </section>
 
 <!-- ============ MARTES 29 ============ -->
 <section class="daycard" id="d29">
-  <div class="day-head">
-    <span class="day-tag">MAR 29</span>
-    <span class="day-title">Capri + Grotta Azzurra</span>
-    <span class="day-desc">La isla y su cueva azul.</span>
+  <header><span class="day-tag">MAR 29</span><div class="day-title">Capri + Grotta Azzurra</div><div class="day-desc">La isla y su cueva azul.</div></header>
+  <div class="content">
+
+    <h2 class="sec">Salida desde tu hotel</h2>
+    <div class="strip"><span class="ico">⛴️</span><span class="txt">Caremar sale de <b>Calata Porta di Massa</b> (a <b>~8–10 min a pie</b> del hotel). Si eliges lancha rápida, es el <b>Molo Beverello</b> (~12 min).</span>
+    <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Via+Guglielmo+Melisurgo+4,+80133+Napoli&destination=Calata+Porta+di+Massa,+Napoli&travelmode=walking" target="_blank">Cómo llegar a pie</a></div>
+
+    <h2 class="sec">1 · Ya confirmado</h2>
+    <div class="item"><div class="ico">🏨</div><div class="body"><div class="t">Noche en Nápoles (DCR Municipio) <span class="badge ok">OK</span></div><div class="s">Vuelves a dormir a Nápoles.</div></div></div>
+
+    <h2 class="sec">2 · Cómo moverse hoy (con opciones)</h2>
+    <table>
+      <tr><th>Tramo</th><th>Opción principal</th><th>Alternativa</th><th>Precio</th></tr>
+      <tr>
+        <td class="px">Napoli → Capri</td>
+        <td><b>Caremar (ferry)</b> desde Calata Porta di Massa: <b>07:55</b> (85 min, barato y no marea). <a class="live" href="https://shop.caremar.it/it/orari/" target="_blank">ver en vivo →</a></td>
+        <td>Lancha rápida (hidroala) NLG/Snav desde Beverello: 08:05, 08:35, 09:10, 09:30 (50 min). Caremar "nave veloce" 12:00.</td>
+        <td class="px">€19 (ferry)<br>€25–29 (rápida)</td>
+      </tr>
+      <tr>
+        <td class="px">Grotta Azzurra</td>
+        <td>Desde Marina Grande: lancha hasta la cueva (€18–22) + entrada (€14) + barca de remos (€8). <b>Solo ventanilla, no se reserva.</b></td>
+        <td>Si cierra: <b>giro de la isla en barco</b> (Faraglioni y cuevas, ~€20–25).</td>
+        <td class="px">~€40–44<br>total/pax</td>
+      </tr>
+      <tr>
+        <td class="px">Capri → Napoli</td>
+        <td>Caremar / Snav / NLG — salidas continuas, últimas ~19:00–21:00. Cómpralo en el puerto al llegar. <a class="live" href="https://www.capri.it/it/ferry-schedule" target="_blank">ver en vivo →</a></td>
+        <td>—</td>
+        <td class="px">€19–29</td>
+      </tr>
+    </table>
+    <div class="note blue">Tasa de desembarco en Capri <b>€5/pax</b> (abr–oct) ya incluida en el billete. Si vas en lancha rápida, sal de <b>Beverello</b>, no de Calata Porta di Massa (hay shuttle gratuito entre ambos).</div>
+
+    <details class="extra livepanel"><summary>🖥️ Salidas en vivo · Napoli–Capri (todas las compañías)</summary><div class="body">
+      <iframe src="https://www.capri.it/it/ferry-schedule" loading="lazy" title="Salidas en vivo Napoli Capri"></iframe>
+      <div class="hint">Horarios de Caremar/Snav/NLG desde capri.it. Si no carga, usa el botón "🔄 Ver horario en vivo" de la tabla.</div>
+    </div></details>
+    <div class="note terra">⚠️ <b>Grotta Azzurra: no puedo confirmar si estará abierta ese día</b> — cierra con oleaje (20–30% de los días de sept/oct). Verifica la mañana del viaje: ventanilla de <b>Marina Grande</b>, <b>capritourism.com</b>, app "Capri", o llama al <b>+39 081 837 0634</b>.</div>
+
+    <h2 class="sec">3 · Comer (elige 1–2)</h2>
+    <div class="grid">
+      <div class="card"><div class="t">🍋 Da Paolino (Marina Grande)</div><div class="s">Cena romántica bajo limoneros. Plato €25–40 (es el capricho del viaje).</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Da+Paolino+Capri" target="_blank">Maps</a></span></div>
+      <div class="card"><div class="t">🍦 Buonocore Gelateria (Anacapri)</div><div class="s">Cono de pistacho/limón recién hecho, €4.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Buonocore+Gelateria+Anacapri" target="_blank">Maps</a></span></div>
+      <div class="card"><div class="t">🦑 La Fontelina (punta del Faraglioni)</div><div class="s">Club de playa con el mejor marco; plato €30–45.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=La+Fontelina+Capri" target="_blank">Maps</a></span></div>
+      <div class="card"><div class="t">🥪 Capannina / puestos del puerto</div><div class="s">Bocadillo caprese y limonada, ~€10–12, rápido.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Marina+Grande+Capri" target="_blank">Maps</a></span></div>
+    </div>
+
+    <h2 class="sec">4 · Ver / hacer</h2>
+    <div class="grid">
+      <div class="card"><div class="t">🪨 Giardini di Augusto</div><div class="s">La foto de los Faraglioni, entrada €1,50.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Giardini+di+Augusto+Capri" target="_blank">Maps</a></span></div>
+      <div class="card"><div class="t">🚡 Monte Solaro (Anacapri)</div><div class="s">Telesilla con la mejor vista de la bahía, ida/vuelta ~€12–14.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Seggiovia+Monte+Solaro+Anacapri" target="_blank">Maps</a></span></div>
+    </div>
+
+    <h2 class="sec">5 · Checklist del día</h2>
+    <div class="checklist">
+      <label class="check"><input type="checkbox" class="js-check" data-key="d29-ferry1"><span class="lbl"><b>Comprado: ferry Napoli→Capri 07:55 (Caremar)</b><br><span class="s">shop.caremar.it · €19/pax. O lancha rápida si prefieres dormir más.</span></span></label>
+      <label class="check"><input type="checkbox" class="js-check" data-key="d29-grotta"><span class="lbl"><b>Día: Grotta Azzurra (pago in situ, ~€40–44)</b><br><span class="s">Verifica antes de las 9:30 que esté abierta.</span></span></label>
+      <label class="check"><input type="checkbox" class="js-check" data-key="d29-ferry2"><span class="lbl"><b>Día: ferry Capri→Napoli en el puerto</b><br><span class="s">€19–29, compra al llegar para no atarte.</span></span></label>
+      <label class="check"><input type="checkbox" class="js-check" data-key="d29-efectivo"><span class="lbl"><b>Efectivo para la Grotta (lancha + barca de remos)</b></span></label>
+    </div>
+
+    <details class="extra"><summary>⚠️ Errores comunes</summary><div class="body avoid"><ul>
+      <li>Ir a la Grotta a mediodía: cola de lanchas de 30–45 min; ve antes de las 9:30.</li>
+      <li>Pagar la Grotta "por adelantado" a alguien fuera del puerto: no existe reserva.</li>
+      <li>Quedarte sin plan si cierra: ten el giro de isla como plan B.</li>
+    </ul></div></details>
+    <details class="extra"><summary>💡 Recordatorios</summary><div class="body rem"><ul>
+      <li>💶 Efectivo: la barca de remos y la entrada de la Grotta se pagan en cash.</li>
+      <li>🧥 A primera hora en el mar hace fresco; lleva capa ligera.</li>
+      <li>📱 Revisa el viento (libeccio = cierre) y la app de Capri antes de salir.</li>
+    </ul></div></details>
   </div>
-
-  <h2 class="sec">1 · Logística confirmada</h2>
-  <div class="row"><div class="ico">🏨</div><div class="body"><div class="t">Noche en Nápoles (DCR Municipio)</div><div class="s">Vuelves a dormir a Nápoles. <span class="badge ok">OK</span></div></div></div>
-
-  <h2 class="sec">2 · Transporte pendiente (resuelto)</h2>
-  <table>
-    <tr><th>Tramo</th><th>Operador / salida</th><th>Precio</th><th>Link</th></tr>
-    <tr>
-      <td class="px">Napoli → Capri<br><span style="font-weight:400;color:var(--muted)">Calata Porta di Massa</span></td>
-      <td><b>Caremar</b> — traghetto <b>07:55</b> (85 min, recomendado: barato y no marea) · nave veloce 12:00 (60 min). Si prefieres ir rápido, aliscafo NLG/Snav desde Beverello 08:35–09:30 (50 min).</td>
-      <td class="px">€19 (ferry)<br>€25 (veloce)<br>€26–29 (aliscafo)</td>
-      <td><a href="https://shop.caremar.it/it/orari/" target="_blank">caremar.it</a></td>
-    </tr>
-    <tr>
-      <td class="px">Grotta Azzurra<br><span style="font-weight:400;color:var(--muted)">desde Marina Grande</span></td>
-      <td>Lancha motora (€18–22) + entrada oficial (€14, municipio de Anacapri) + barca de remos (€8). <b>Sin reserva anticipada: solo ventanilla en el momento.</b></td>
-      <td class="px">~€40–44<br>total/pax</td>
-      <td><a href="https://www.capri.com/en/e/la-grotta-azzurra" target="_blank">guía capri.com</a></td>
-    </tr>
-    <tr>
-      <td class="px">Capri → Napoli<br><span style="font-weight:400;color:var(--muted)">todo el día</span></td>
-      <td>Caremar / Snav / NLG — salidas continuas, últimas ~19:00–21:00. Cómpralo en el puerto al llegar (así no te atas a la hora).</td>
-      <td class="px">€19–29</td>
-      <td><a href="https://www.capri.it/it/ferry-schedule" target="_blank">capri.it</a></td>
-    </tr>
-  </table>
-  <div class="note blue">Tasa de desembarco en Capri <b>€5/pax</b> (abr–oct) ya incluida en el billete. Nota: <b>Caremar sale de Calata Porta di Massa</b>, no del Beverello (hay shuttle gratuito entre ambos).</div>
-  <div class="note">⚠️ <b>Grotta Azzurra: no puedo confirmar si estará abierta ese día</b> — cierra con oleaje &gt;0,3 m (20–30% de los días de sept/oct). Verifica la mañana del viaje en: ventanilla de Marina Grande, <b>capritourism.com</b>, la app "Capri", o llamando a la oficina de Marina Grande <b>+39 081 837 0634</b>. Si está cerrada, haz el <b>giro de la isla en barco</b> (Faraglioni, cuevas, ~€20–25) como plan B.</div>
-
-  <h2 class="sec">3 · Dónde comer / imprescindibles</h2>
-  <ul class="tight">
-    <li>🪨 <b>Giardini di Augusto</b> — la foto de los Faraglioni, entrada €1,50. 📍 <a href="https://www.google.com/maps/search/?api=1&query=Giardini+di+Augusto+Capri" target="_blank">Maps</a></li>
-    <li>🚠 <b>Funicular</b> Marina Grande→Piazzetta (€2,20) y la <b>Piazzetta</b> de Capri. 📍 <a href="https://www.google.com/maps/search/?api=1&query=Piazzetta+di+Capri" target="_blank">Maps</a></li>
-    <li>🍋 <b>Da Paolino</b> (Marina Grande) — cena romántica bajo limoneros, plato €25–40 (splurge). 📍 <a href="https://www.google.com/maps/search/?api=1&query=Da+Paolino+Capri" target="_blank">Maps</a></li>
-    <li>🍦 <b>Buonocore Gelateria</b> (Anacapri) — cono de pistacho/limón €4. 📍 <a href="https://www.google.com/maps/search/?api=1&query=Buonocore+Gelateria+Anacapri" target="_blank">Maps</a></li>
-    <li>🚡 <b>Seggiovia Monte Solaro</b> (Anacapri) — telesilla con la mejor vista de la bahía, ida/vuelta ~€12–14. 📍 <a href="https://www.google.com/maps/search/?api=1&query=Seggiovia+Monte+Solaro+Anacapri" target="_blank">Maps</a></li>
-  </ul>
-
-  <h2 class="sec">4 · Evitar / errores comunes</h2>
-  <div class="avoid"><ul class="tight">
-    <li>❌ Ir a la Grotta Azzurra a mediodía: cola de lanchas de 30–45 min; ve antes de las 9:30.</li>
-    <li>❌ Pagar la Grotta Azzurra "por adelantado" a alguien fuera del puerto: no existe reserva; se paga en la entrada de la cueva.</li>
-    <li>❌ Quedarte sin plan si la cueva cierra — ten el giro de isla como plan B.</li>
-  </ul></div>
-
-  <h2 class="sec">5 · Recordatorios</h2>
-  <ul class="tight">
-    <li>💶 Lleva efectivo: la barca de remos y la entrada de la Grotta se pagan en cash.</li>
-    <li>🧥 A primera hora en el mar hace fresco; lleva una capa ligera.</li>
-    <li>📱 Revisa el mar (viento libeccio = cierre) y la app de Capri antes de salir.</li>
-  </ul>
 </section>
 
 <!-- ============ MIÉRCOLES 30 ============ -->
 <section class="daycard" id="d30">
-  <div class="day-head">
-    <span class="day-tag">MIÉ 30</span>
-    <span class="day-title">Pompeya (día completo)</span>
-    <span class="day-desc">La ciudad romana bajo el Vesubio.</span>
+  <header><span class="day-tag">MIÉ 30</span><div class="day-title">Pompeya (día completo)</div><div class="day-desc">La ciudad romana bajo el Vesubio.</div></header>
+  <div class="content">
+
+    <h2 class="sec">Salida desde tu hotel</h2>
+    <div class="strip"><span class="ico">🚇</span><span class="txt">Metro <b>Línea 1</b> desde <b>Municipio</b> (junto al hotel) hasta <b>Garibaldi</b> (3 paradas) → allí tomas la Circumvesuviana. Total ~25–30 min hasta el tren.</span>
+    <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Via+Guglielmo+Melisurgo+4,+80133+Napoli&destination=Pompei+Scavi+Villa+dei+Misteri&travelmode=transit" target="_blank">Ver ruta en Maps</a></div>
+
+    <h2 class="sec">1 · Ya confirmado</h2>
+    <div class="item"><div class="ico">🏨</div><div class="body"><div class="t">Noche en Nápoles (DCR Municipio) <span class="badge ok">OK</span></div><div class="s">Vuelves a dormir a Nápoles.</div></div></div>
+
+    <h2 class="sec">2 · Cómo moverse hoy (con opciones)</h2>
+    <table>
+      <tr><th>Tramo</th><th>Opción principal</th><th>Alternativa</th><th>Precio</th></tr>
+      <tr>
+        <td class="px">Napoli → Pompei</td>
+        <td><b>Circumvesuviana (tren local EAV)</b>: Napoli Garibaldi → <b>Pompei Scavi Villa dei Misteri</b>. Cada ~30 min, 35–40 min. Pago con Tap&Go en el torniquete. <a class="live" href="https://www.eavsrl.it" target="_blank">orarios EAV →</a></td>
+        <td><b>Trenitalia</b> a la estación "Pompei" (ciudad nueva) ~€3–4, luego 15 min a pie o shuttle a las ruinas.</td>
+        <td class="px">€3,40–3,80</td>
+      </tr>
+      <tr>
+        <td class="px">Entrada al Parque</td>
+        <td><b>Pompeii Express</b> (solo ciudad antigua). <b>Compra online anticipada</b> (entrada con franja horaria y cupo diario). <a class="live" href="https://www.vivaticket.com/it/ticket/pompeii/295564" target="_blank">comprar oficial →</a></td>
+        <td><b>Plus €25</b>: añade Villa dei Misteri, Villa di Diomede y Boscoreale. Vale la pena por +€7.</td>
+        <td class="px">€18 (Express)<br>€25 (Plus)</td>
+      </tr>
+      <tr>
+        <td class="px">Pompei → Napoli</td>
+        <td>Circumvesuviana desde la misma estación de Pompei Scavi, cada ~30 min.</td>
+        <td>—</td>
+        <td class="px">€3,40–3,80</td>
+      </tr>
+    </table>
+    <div class="note green">Entrada <b>nominal y con cupo (20.000/día)</b>: cómprala hoy eligiendo franja de mañana. Entra por <b>Porta Marina</b> (junto a la estación) o <b>Piazza Anfiteatro</b>.</div>
+    <div class="note">Lleva agua, gorra y calzado cómodo: es una ciudad entera al sol, sin apenas sombra.</div>
+
+    <h2 class="sec">3 · Comer (elige 1–2)</h2>
+    <div class="grid">
+      <div class="card"><div class="t">🍷 Caupona (junto a Porta Marina)</div><div class="s">Taberna de ambiente romano, menú €30–40.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Caupona+Pompei" target="_blank">Maps</a></span></div>
+      <div class="card"><div class="t">🍝 Il Principe (Piazza Bartolo Longo)</div><div class="s">Cocina campana junto al Santuario, €20–30.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Ristorante+Il+Principe+Pompei" target="_blank">Maps</a></span></div>
+      <div class="card"><div class="t">🍇 Bosco de' Medici (bodega)</div><div class="s">Vino y almuerzo entre viñedos junto al recinto, ~€30.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Bosco+de+Medici+Pompei" target="_blank">Maps</a></span></div>
+    </div>
+
+    <h2 class="sec">4 · Ver / hacer</h2>
+    <div class="grid">
+      <div class="card"><div class="t">🏛️ Villa dei Misteri</div><div class="s">Los frescos más famosos de Pompeya (incluida en la entrada Plus).</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Villa+dei+Misteri+Pompei" target="_blank">Maps</a></span></div>
+      <div class="card"><div class="t">🏟️ Foro + Anfiteatro</div><div class="s">El corazón de la ciudad antigua (con la entrada normal).</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Foro+di+Pompei" target="_blank">Maps</a></span></div>
+    </div>
+
+    <h2 class="sec">5 · Checklist del día</h2>
+    <div class="checklist">
+      <label class="check"><input type="checkbox" class="js-check" data-key="d30-ticket"><span class="lbl"><b>Comprado: entrada Pompeya (Express €18 o Plus €25)</b><br><span class="s">vivaticket, con franja horaria.</span></span></label>
+      <label class="check"><input type="checkbox" class="js-check" data-key="d30-tren"><span class="lbl"><b>Día: Circumvesuviana ida/vuelta (tap&go)</b><br><span class="s">€3,40–3,80 por trayecto.</span></span></label>
+      <label class="check"><input type="checkbox" class="js-check" data-key="d30-agua"><span class="lbl"><b>Agua + gorra + calzado cómodo</b></span></label>
+    </div>
+
+    <details class="extra"><summary>⚠️ Errores comunes</summary><div class="body avoid"><ul>
+      <li>Comprar la entrada a revendedores fuera de la taquilla (sobreprecio o "guía" trucha).</li>
+      <li>Bajarte en "Pompei" (ciudad nueva) en vez de "Pompei Scavi Villa dei Misteri".</li>
+      <li>Ir sin agua ni gorra en día de sol: poca sombra y pocas fuentes.</li>
+    </ul></div></details>
+    <details class="extra"><summary>💡 Recordatorios</summary><div class="body rem"><ul>
+      <li>🎫 Billete nominal: lleva DNI.</li>
+      <li>🕐 Abre ~9:00, cierra ~17:30–19:00 según temporada; reserva 3–4 h mínimas.</li>
+      <li>💶 Efectivo por si el Tap&Go del tren da problemas.</li>
+    </ul></div></details>
   </div>
-
-  <h2 class="sec">1 · Logística confirmada</h2>
-  <div class="row"><div class="ico">🏨</div><div class="body"><div class="t">Noche en Nápoles (DCR Municipio)</div><div class="s">Vuelves a dormir a Nápoles. <span class="badge ok">OK</span></div></div></div>
-
-  <h2 class="sec">2 · Transporte y entrada pendientes (resuelto)</h2>
-  <table>
-    <tr><th>Tramo</th><th>Operador / salida</th><th>Precio</th><th>Link</th></tr>
-    <tr>
-      <td class="px">Napoli → Pompei<br><span style="font-weight:400;color:var(--muted)">~35–40 min</span></td>
-      <td><b>Circumvesuviana (EAV)</b> — Napoli Garibaldi → <b>Pompei Scavi Villa dei Misteri</b>. Cada ~30 min, primer tren temprano. Tap&Go en torniquete.</td>
-      <td class="px">€3,40–3,80</td>
-      <td><a href="https://www.eavsrl.it" target="_blank">eavsrl.it</a></td>
-    </tr>
-    <tr>
-      <td class="px">Entrada Parque Arqueológico</td>
-      <td>Billete <b>Pompeii Express</b> (solo ciudad antigua) o <b>Plus</b> (incluye Villa dei Misteri, Villa di Diomede, Boscoreale). Entrada con franja horaria: <b>compra online anticipada</b>.</td>
-      <td class="px">€18 Express<br>€25 Plus</td>
-      <td><a href="https://www.vivaticket.com/it/ticket/pompeii/295564" target="_blank">vivaticket (oficial)</a></td>
-    </tr>
-    <tr>
-      <td class="px">Pompei → Napoli</td>
-      <td><b>Circumvesuviana</b> — desde la misma estación de Pompei Scavi, cada ~30 min.</td>
-      <td class="px">€3,40–3,80</td>
-      <td><a href="https://www.eavsrl.it" target="_blank">eavsrl.it</a></td>
-    </tr>
-  </table>
-  <div class="note green">La entrada a Pompeya es <b>nominal y con cupo diario (20.000)</b>. Cómprala hoy en vivaticket eligiendo franja de mañana. La "Plus" por +€7 vale la pena si quieres ver la Villa dei Misteri (los frescos más famosos) sin pagar extra.</div>
-  <div class="note">Entra por <b>Porta Marina</b> (la más céntrica, junto a la estación Villa dei Misteri) o por <b>Piazza Anfiteatro</b>. Lleva agua, gorra y calzado cómodo: es una ciudad entera al sol, sin apenas sombra.</div>
-
-  <h2 class="sec">3 · Dónde comer / imprescindibles</h2>
-  <ul class="tight">
-    <li>🏛️ <b>Villa dei Misteri</b>, el Foro, la Casa del Fauno y el Anfiteatro — imprescindibles dentro del recinto (ya con entrada). 📍 <a href="https://www.google.com/maps/search/?api=1&query=Parco+Archeologico+di+Pompei" target="_blank">Maps</a></li>
-    <li>🍷 <b>Caupona</b> (frente a Porta Marina) — taberna de ambiente romano, menú €30–40. 📍 <a href="https://www.google.com/maps/search/?api=1&query=Caupona+Pompei" target="_blank">Maps</a></li>
-    <li>🍝 <b>Il Principe</b> (Piazza Bartolo Longo) — cocina campana junto al Santuario, €20–30. 📍 <a href="https://www.google.com/maps/search/?api=1&query=Ristorante+Il+Principe+Pompei" target="_blank">Maps</a></li>
-  </ul>
-
-  <h2 class="sec">4 · Evitar / errores comunes</h2>
-  <div class="avoid"><ul class="tight">
-    <li>❌ Comprar la entrada a revendedores fuera de la taquilla (venden a sobreprecio o con "guía" trucha).</li>
-    <li>❌ Bajarte en la estación de tren "Pompei" (ciudad nueva) en lugar de "Pompei Scavi Villa dei Misteri": te deja lejos de la entrada.</li>
-    <li>❌ Ir sin agua ni gorra en un día de sol — hay poca sombra y pocas fuentes.</li>
-  </ul></div>
-
-  <h2 class="sec">5 · Recordatorios</h2>
-  <ul class="tight">
-    <li>🎫 Lleva el billete en el móvil o impreso; es nominal (DNI).</li>
-    <li>🕐 Abre ~9:00, cierra ~17:30–19:00 según temporada; reserva 3–4 h mínimas.</li>
-    <li>💶 Efectivo para el tren Circumvesuviana si el Tap&Go te da problemas.</li>
-  </ul>
 </section>
 
 <!-- ============ JUEVES 1 ============ -->
 <section class="daycard" id="d01">
-  <div class="day-head">
-    <span class="day-tag">JUE 1</span>
-    <span class="day-title">Nápoles gastronómico + regreso</span>
-    <span class="day-desc">Último día libre en la ciudad.</span>
+  <header><span class="day-tag">JUE 1</span><div class="day-title">Nápoles gastronómico + regreso</div><div class="day-desc">Último día libre en la ciudad.</div></header>
+  <div class="content">
+
+    <h2 class="sec">Salida desde tu hotel</h2>
+    <div class="strip"><span class="ico">🚶</span><span class="txt">Día a pie por el centro. Al final, recoge maletas en el hotel y al tren: metro <b>Municipio → Garibaldi</b> (~8 min) o taxi ~10 min.</span>
+    <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Via+Guglielmo+Melisurgo+4,+80133+Napoli&destination=Napoli+Centrale+Piazza+Garibaldi&travelmode=transit" target="_blank">Cómo llegar al tren</a></div>
+
+    <h2 class="sec">1 · Ya confirmado</h2>
+    <div class="item"><div class="ico">🧳</div><div class="body"><div class="t">Checkout por la mañana, maletas en recepción <span class="badge ok">OK</span></div><div class="s">El hotel te las guarda mientras exploras.</div></div></div>
+    <div class="item"><div class="ico">🚄</div><div class="body"><div class="t">Tren Napoli–Firenze · 18:20 → 21:17 <span class="badge ok">OK</span></div><div class="s">Sal desde Napoli Centrale con margen.</div></div></div>
+
+    <h2 class="sec">2 · Cómo moverse hoy</h2>
+    <p style="margin:4px 0;font-size:.9rem">Nada que comprar: a pie o metro (billete ANM €1,20–1,50). Caminando cubres Spaccanapoli, San Gregorio Armeno y el Lungomare.</p>
+
+    <h2 class="sec">3 · Comer (elige 1–2)</h2>
+    <div class="grid">
+      <div class="card"><div class="t">🍕 Di Matteo (Via dei Tribunali)</div><div class="s">Pizza frita y pizza al portafoglio, €2–7.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Di+Matteo+Via+dei+Tribunali+Napoli" target="_blank">Maps</a></span></div>
+      <div class="card"><div class="t">🥐 Pintauro (Via Toledo)</div><div class="s">Sfogliatella histórica €3.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Pintauro+Napoli" target="_blank">Maps</a></span></div>
+      <div class="card"><div class="t">☕ Gran Caffè Gambrinus</div><div class="s">Desayuno de despedida, café + babà €5–8.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Gran+Caffe+Gambrinus+Napoli" target="_blank">Maps</a></span></div>
+      <div class="card"><div class="t">🐟 Pescado en el Borgo Marinari</div><div class="s">Junto a Castel dell'Ovo, ~€25–35.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Borgo+Marinari+Napoli" target="_blank">Maps</a></span></div>
+    </div>
+
+    <h2 class="sec">4 · Ver / hacer</h2>
+    <div class="grid">
+      <div class="card"><div class="t">🗿 Cappella Sansevero (Cristo Velato)</div><div class="s">Imprescindible. <b>Reserva online con antelación</b> (se agota). ~€10.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Cappella+Sansevero+Napoli" target="_blank">Maps</a></span></div>
+      <div class="card"><div class="t">🕳️ Napoli Sotterranea</div><div class="s">El subsuelo grecorromano, ~€12.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Napoli+Sotterranea" target="_blank">Maps</a></span></div>
+      <div class="card"><div class="t">🎄 Via San Gregorio Armeno</div><div class="s">Calle de los belenes (presepi), gratis.</div><span class="pin">📍 <a href="https://www.google.com/maps/search/?api=1&query=Via+San+Gregorio+Armeno+Napoli" target="_blank">Maps</a></span></div>
+    </div>
+
+    <h2 class="sec">5 · Checklist del día</h2>
+    <div class="checklist">
+      <label class="check"><input type="checkbox" class="js-check" data-key="d01-sansevero"><span class="lbl"><b>Reservado: Cappella Sansevero (~€10)</b><br><span class="s">museosansevero.it, con hora.</span></span></label>
+      <label class="check"><input type="checkbox" class="js-check" data-key="d01-maletas"><span class="lbl"><b>Checkout + maletas en recepción</b></span></label>
+      <label class="check"><input type="checkbox" class="js-check" data-key="d01-tren"><span class="lbl"><b>Recoger maletas ~17:15 y salir al tren 18:20</b></span></label>
+    </div>
+
+    <details class="extra"><summary>⚠️ Errores comunes</summary><div class="body avoid"><ul>
+      <li>Dejar la Cappella Sansevero para el mismo día sin entrada: las franjas se llenan.</li>
+      <li>Pedir "un caffè" esperando un espresso largo: aquí es corto; pide "caffè americano" si lo quieres largo.</li>
+      <li>Volver tarde por las maletas y correr al tren — guarda ~30 min de margen.</li>
+    </ul></div></details>
+    <details class="extra"><summary>💡 Recordatorios</summary><div class="body rem"><ul>
+      <li>🎫 Ten el billete del tren de vuelta descargado (offline).</li>
+      <li>💶 Efectivo para street food (muchos puestos no admiten tarjeta).</li>
+    </ul></div></details>
   </div>
-
-  <h2 class="sec">1 · Logística confirmada</h2>
-  <div class="row"><div class="ico">🧳</div><div class="body"><div class="t">Checkout por la mañana, maletas en recepción</div><div class="s">El hotel las guarda mientras exploras. <span class="badge ok">OK</span></div></div></div>
-  <div class="row"><div class="ico">🚄</div><div class="body"><div class="t">Tren Napoli–Firenze · 18:20 → 21:17</div><div class="s">Sal desde Napoli Centrale con margen. <span class="badge ok">OK — no tocar</span></div></div></div>
-
-  <h2 class="sec">2 · Transporte pendiente</h2>
-  <div class="row"><div class="ico">🚶</div><div class="body"><div class="t">Nada que comprar — día a pie / metro</div><div class="s">Solo el metro/bus si hace falta (billete ANM €1,20–1,50). Caminando cubres Spaccanapoli, San Gregorio Armeno y el Lungomare.</div></div></div>
-
-  <h2 class="sec">3 · Dónde comer / imprescindibles</h2>
-  <ul class="tight">
-    <li>🗿 <b>Cappella Sansevero</b> (Cristo Velato) — imprescindible; <b>reserva online con antelación</b> (se agota). Entrada ~€10. 📍 <a href="https://www.google.com/maps/search/?api=1&query=Cappella+Sansevero+Napoli" target="_blank">Maps</a></li>
-    <li>🍕 <b>Di Matteo</b> (Via dei Tribunali) — pizza frita y pizza al portafoglio, €2–7. 📍 <a href="https://www.google.com/maps/search/?api=1&query=Di+Matteo+Via+dei+Tribunali+Napoli" target="_blank">Maps</a></li>
-    <li>🥐 <b>Pintauro</b> (Via Toledo) — sfogliatella histórica €3. 📍 <a href="https://www.google.com/maps/search/?api=1&query=Pintauro+Napoli" target="_blank">Maps</a></li>
-    <li>🕳️ <b>Napoli Sotterranea</b> — el subsuelo grecorromano, ~€12. 📍 <a href="https://www.google.com/maps/search/?api=1&query=Napoli+Sotterranea" target="_blank">Maps</a></li>
-    <li>🎄 <b>Via San Gregorio Armeno</b> — calle de los belenes (presepi), gratis. 📍 <a href="https://www.google.com/maps/search/?api=1&query=Via+San+Gregorio+Armeno+Napoli" target="_blank">Maps</a></li>
-  </ul>
-
-  <h2 class="sec">4 · Evitar / errores comunes</h2>
-  <div class="avoid"><ul class="tight">
-    <li>❌ Dejar la Cappella Sansevero para el mismo día sin entrada: las franjas se llenan.</li>
-    <li>❌ Pedir "un caffè" esperando un espresso largo: aquí es espresso corto; pide "caffè americano" si lo quieres largo.</li>
-    <li>❌ Volver al hotel tarde a por las maletas y correr al tren — guarda ~30 min de margen.</li>
-  </ul></div>
-
-  <h2 class="sec">5 · Recordatorios</h2>
-  <ul class="tight">
-    <li>🧳 Recoge las maletas en el hotel a más tardar ~17:15 para estar en Centrale con holgura.</li>
-    <li>🎫 Ten el billete del tren de vuelta descargado en el móvil (offline).</li>
-    <li>💶 Efectivo para street food (muchos puestos no admiten tarjeta).</li>
-  </ul>
 </section>
 
 <!-- ============ RESUMEN COMPRAS ============ -->
 <section class="daycard" id="resumen">
-  <div class="day-head">
-    <span class="day-tag">✔ Resumen</span>
-    <span class="day-title">Compras pendientes (por urgencia)</span>
+  <header><span class="day-tag">✔ Resumen</span><div class="day-title">Compras pendientes (por urgencia)</div><div class="day-desc">Marca y se guarda solo en este navegador. "Reserva ya" = hazlo cuanto antes; "mismo día" = en ventanilla/muelle.</div></header>
+  <div class="content">
+    <button class="reset" onclick="resetChecks()">Borrar todo y empezar de cero</button>
+    <div class="checklist">
+      <label class="check"><input type="checkbox" class="js-check" data-key="r-pompeya"><span class="lbl"><b>Pompeya (MIÉ 30)</b> — entrada Express €18 o Plus €25 con franja. <span class="urge now">Reserva ya</span><br><span class="s"><a href="https://www.vivaticket.com/it/ticket/pompeii/295564" target="_blank">vivaticket</a></span></span></label>
+      <label class="check"><input type="checkbox" class="js-check" data-key="r-sansevero"><span class="lbl"><b>Cappella Sansevero (JUE 1)</b> — Cristo Velato ~€10. <span class="urge now">Reserva ya</span><br><span class="s"><a href="https://www.museosansevero.it" target="_blank">museosansevero.it</a></span></span></label>
+      <label class="check"><input type="checkbox" class="js-check" data-key="r-f1"><span class="lbl"><b>Ferry Napoli→Positano 08:35 (LUN 28)</b> — NLG €32. <span class="urge soon">Anticipada</span><br><span class="s"><a href="https://www.nlg.it/en/routes/napolibeverello-positano/" target="_blank">nlg.it</a></span></span></label>
+      <label class="check"><input type="checkbox" class="js-check" data-key="r-f2"><span class="lbl"><b>Ferry Amalfi→Napoli 17:00 (LUN 28)</b> — NLG €32. <span class="urge soon">Anticipada</span><br><span class="s"><a href="https://www.nlg.it/en/routes/napolibeverello-positano/" target="_blank">nlg.it</a></span></span></label>
+      <label class="check"><input type="checkbox" class="js-check" data-key="r-f3"><span class="lbl"><b>Ferry Napoli→Capri 07:55 (MAR 29)</b> — Caremar €19. <span class="urge soon">Anticipada</span><br><span class="s"><a href="https://shop.caremar.it/it/orari/" target="_blank">caremar.it</a></span></span></label>
+      <label class="check"><input type="checkbox" class="js-check" data-key="r-f4"><span class="lbl"><b>Positano→Amalfi (LUN 28)</b> — Travelmar €10, en el muelle. <span class="urge day">Mismo día</span></span></label>
+      <label class="check"><input type="checkbox" class="js-check" data-key="r-f5"><span class="lbl"><b>Capri→Napoli (MAR 29)</b> — €19–29, en el puerto al llegar. <span class="urge day">Mismo día</span></span></label>
+      <label class="check"><input type="checkbox" class="js-check" data-key="r-grotta"><span class="lbl"><b>Grotta Azzurra (MAR 29)</b> — ~€40–44, pago in situ (no reservable). <span class="urge walk">Solo ventanilla</span></span></label>
+      <label class="check"><input type="checkbox" class="js-check" data-key="r-circum"><span class="lbl"><b>Circumvesuviana ida/vuelta (MIÉ 30)</b> — €3,40–3,80, tap&go. <span class="urge day">Mismo día</span></span></label>
+    </div>
+    <div class="note green"><b>Coste estimado transporte + entradas (por persona):</b> ≈ €185–195 sin comidas ni extras. La Grotta Azzurra no es fija: si cierra, ~€20 del giro en barco como alternativa.</div>
   </div>
-  <p class="day-desc">Marca según vayas comprando. "Reserva anticipada" = hazlo ya; "mismo día" = en ventanilla/muelle.</p>
-
-  <div class="checklist">
-    <label class="check"><input type="checkbox"><div><span class="urge now">Reserva ya</span> <b>Pompeya (MIÉ 30)</b> — entrada Express €18 o Plus €25 con franja horaria. <a href="https://www.vivaticket.com/it/ticket/pompeii/295564" target="_blank">vivaticket</a></div></label>
-    <label class="check"><input type="checkbox"><div><span class="urge now">Reserva ya</span> <b>Cappella Sansevero (JUE 1)</b> — Cristo Velato ~€10, entrada con hora. <a href="https://www.museosansevero.it" target="_blank">museosansevero.it</a></div></label>
-    <label class="check"><input type="checkbox"><div><span class="urge soon">Reserva anticipada</span> <b>Ferry Napoli→Positano (LUN 28) 08:35</b> — NLG €32. <a href="https://www.nlg.it/en/routes/napolibeverello-positano/" target="_blank">nlg.it</a></div></label>
-    <label class="check"><input type="checkbox"><div><span class="urge soon">Reserva anticipada</span> <b>Ferry Amalfi→Napoli (LUN 28) 17:00</b> — NLG €32. <a href="https://www.nlg.it/en/routes/napolibeverello-positano/" target="_blank">nlg.it</a></div></label>
-    <label class="check"><input type="checkbox"><div><span class="urge soon">Reserva anticipada</span> <b>Ferry Napoli→Capri (MAR 29) 07:55</b> — Caremar €19 (Calata Porta di Massa). <a href="https://shop.caremar.it/it/orari/" target="_blank">caremar.it</a></div></label>
-    <label class="check"><input type="checkbox"><div><span class="urge day">Mismo día</span> <b>Positano→Amalfi (LUN 28)</b> — Travelmar €10, en el muelle.</div></label>
-    <label class="check"><input type="checkbox"><div><span class="urge day">Mismo día</span> <b>Capri→Napoli (MAR 29)</b> — €19–29, en el puerto al llegar.</div></label>
-    <label class="check"><input type="checkbox"><div><span class="urge walk">Solo ventanilla</span> <b>Grotta Azzurra (MAR 29)</b> — ~€40–44/pax, pago in situ (no reservable). Verificar apertura ese día.</div></label>
-    <label class="check"><input type="checkbox"><div><span class="urge day">Mismo día</span> <b>Circumvesuviana ida/vuelta (MIÉ 30)</b> — €3,40–3,80 por trayecto, tap&go en estación.</div></label>
-  </div>
-
-  <div class="note green"><b>Coste estimado de transporte + entradas (por persona):</b> ≈ €185–195 sin contar comidas ni extras (Capri/Grotta son lo más caro). La Grotta Azzurra no es fija: si cierra, ~€20 del giro en barco como alternativa.</div>
 </section>
 
 <footer>
-  <p><b>Nota sobre los datos:</b> precios y horarios de ferris/tren/parque verificados el 25 septiembre 2026. Los horarios marítimos son orientativos y cambian con el mar y la temporada — revalida el día previo con el operador. Los tramos marcados ✅ (tren Firenze–Napoli, hotel, tren de vuelta) no se han modificado.</p>
+  <p><b>Nota sobre los datos:</b> precios y horarios de ferris/tren/parque verificados el 25 septiembre 2026. Los horarios marítimos son <b>orientativos</b> y cambian con el mar y la temporada: usa los botones "ver en vivo" el día previo. Los tramos ✅ (tren Firenze–Napoli, hotel, tren de vuelta) no se han modificado.</p>
   <p><b>Teléfonos útiles:</b> NLG 081 552 0763 · Caremar 081 189 666 90 · Travelmar 089 872 950 · Info Capri 081 377 6836 · Marina Grande 081 837 0634.</p>
   <div class="srcs">
-    <p><b>Fuentes principales:</b></p>
-    <p>
-      <a href="https://www.nlg.it/en/routes/napolibeverello-positano/" target="_blank">NLG Napoli–Positano (oficial)</a> ·
-      <a href="https://www.travelmar.it/it/orari" target="_blank">Travelmar (oficial)</a> ·
-      <a href="https://shop.caremar.it/it/orari/" target="_blank">Caremar (oficial)</a> ·
-      <a href="https://www.capri.it/it/ferry-schedule" target="_blank">capri.it horarios ferry</a> ·
+    <p><b>Fuentes:</b>
+      <a href="https://www.nlg.it/en/routes/napolibeverello-positano/" target="_blank">NLG</a> ·
+      <a href="https://www.travelmar.it/it/orari" target="_blank">Travelmar</a> ·
+      <a href="https://shop.caremar.it/it/orari/" target="_blank">Caremar</a> ·
+      <a href="https://www.capri.it/it/ferry-schedule" target="_blank">capri.it</a> ·
       <a href="https://www.capri.com/en/e/la-grotta-azzurra" target="_blank">capri.com Grotta Azzurra</a> ·
       <a href="https://italyplanner.com/grotta-azzurra-capri.html" target="_blank">Guía Grotta Azzurra</a> ·
-      <a href="https://pompeiisites.org/en/visiting-info/timetables-and-tickets/" target="_blank">Pompeii Sites (oficial)</a> ·
-      <a href="https://www.vivaticket.com/it/ticket/pompeii/295564" target="_blank">Vivaticket Pompeii (oficial)</a> ·
-      <a href="https://amalfi.day/ferry-timetables" target="_blank">Amalfi Day ferry timetables</a>.
+      <a href="https://pompeiisites.org/en/visiting-info/timetables-and-tickets/" target="_blank">Pompeii Sites</a> ·
+      <a href="https://www.vivaticket.com/it/ticket/pompeii/295564" target="_blank">Vivaticket</a> ·
+      <a href="https://amalfi.day/ferry-timetables" target="_blank">Amalfi Day</a>.
     </p>
   </div>
 </footer>
 
 </div>
+
+<script>
+(function(){
+  var KEY='amalfi_checks_v1', store={};
+  try{ store=JSON.parse(localStorage.getItem(KEY)||'{}'); }catch(e){ store={}; }
+  var boxes=[].slice.call(document.querySelectorAll('input.js-check'));
+  function persist(){ try{ localStorage.setItem(KEY, JSON.stringify(store)); }catch(e){} }
+  function count(){
+    var d=0; boxes.forEach(function(b){ if(b.checked)d++; });
+    var p=document.getElementById('progress'); if(p) p.textContent=d+'/'+boxes.length;
+  }
+  boxes.forEach(function(b){
+    var k=b.getAttribute('data-key');
+    if(k && store[k]) b.checked=true;
+    b.addEventListener('change', function(){ if(k){ store[k]=b.checked; persist(); count(); } });
+  });
+  window.resetChecks=function(){ store={}; persist(); boxes.forEach(function(b){b.checked=false;}); count(); };
+  count();
+})();
+</script>
 </body>
 </html>
